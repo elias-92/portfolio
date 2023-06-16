@@ -7,7 +7,7 @@ module.exports = {
 				'primary-color': '#008000',
 			},
 			animation: {
-				'slide-in-down': 'slide-in-down 1s ease-in-out',
+				'slide-in-down': 'slide-in-down .5s ease-in-out',
 			},
 			keyframes: {
 				'slide-in-down': {

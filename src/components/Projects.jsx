@@ -46,10 +46,10 @@ const Projects = () => {
 		newWebSite.rel = 'noopener noreferrer';
 	};
 	return (
-		<section id="Projects" className="relative w-full md:h-screen h-unset mt-8">
+		<section id="Projects" className="relative w-full pt-16">
 			<div className="max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full text-lg gap-5">
 				<div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-					<div className="mb-8">
+					<div className="mb-10">
 						<h2 className="text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1">
 							Projects
 						</h2>

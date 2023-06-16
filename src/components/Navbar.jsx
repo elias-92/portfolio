@@ -24,7 +24,7 @@ const Navbar = ({darkMode, toggleDarkMode}) => {
 		},
 		{
 			id: 5,
-			link: 'Educations',
+			link: 'Education',
 		},
 		{
 			id: 6,
@@ -34,7 +34,7 @@ const Navbar = ({darkMode, toggleDarkMode}) => {
 	return (
 		<header className="fixed top-0 flex bg-neutral-900/60 justify-between h-16 items-center py-4 px-4 md:px-6 text-white mx-auto lg:px-12 md:py-0 w-full z-30 transition-colors duration-700">
 			<div className="flex flex-row gap-4 items-center">
-				<h1 className="flex items-center text-[1.2rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-125 duration-500">
+				<h1 className="flex items-center select-none text-[1.2rem] lg:text-[1.3rem] hover:text-primary-color hover:scale-125 duration-500">
 					<MdKeyboardArrowLeft />
 					Elias Martinez
 					<MdKeyboardArrowRight />

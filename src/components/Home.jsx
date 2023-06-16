@@ -1,11 +1,10 @@
 import React from 'react';
 import fotoPerfil from '../assets/img/fotoPerfil.jpg';
-import cv from '../assets/img/cv.jpg';
 
 const Home = () => {
 	return (
-		<section id="Home" className="relative w-full md:h-screen h-unset">
-			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 py-16 md:py-0 md:flex-row md:gap-8">
+		<section id="Home" className="relative w-full pt-20">
+			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:py-0 md:flex-row md:gap-8">
 				<div className="flex gap-4 flex-col justify-center items-center h-[85%] md:h-full order-2 md:order-1 md:items-start">
 					<h1 className="text-4xl md:text-6xl font-bold mb-2 mt-3 md:mt-0 md:mb-4">
 						I'm Elias Martinez
@@ -15,17 +14,14 @@ const Home = () => {
 					</h2>
 					<p className="py-4 max-x-md text-justify">
 						Certified by Coder House, recognized online education platform,
-						where I graduated as a Frontend developer with React, welcome to my
-						portfolio! I'm excited to share my journey with you and show you the
-						knowledge and skills I've acquired along the way. Thanks for
-						visiting my portfolio and for being part of my journey as a Frontend
-						developer!
+						where I graduated as a Frontend Developer with React. I'm excited to
+						share the knowledge and skills I've acquired along the way. Thank
+						you for visiting my portfolio and being part of my journey!
 					</p>
 					<div>
 						<a
-							href={cv}
-							target="_blank"
-							rel="noreferrer"
+							href="/CV_MARTINEZ_Elias.pdf"
+							download="CV_MARTINEZ_Elias.pdf"
 							className="group font-semibold w-fit px-6 py-3 my-2 flex items-center rounded-md text-black bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 hover:scale-105 duration-100"
 						>
 							Download CV

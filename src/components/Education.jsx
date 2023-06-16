@@ -5,7 +5,7 @@ import certificateRadium from '../assets/img/certificateRadium.png';
 import {useState} from 'react';
 import CertificateModal from './CertificateModal';
 
-const Educations = () => {
+const Education = () => {
 	const [selectedImage, setSelectedImage] = useState(null);
 	const educations = [
 		{id: 1, image: certificateDweb, institution: 'Coder House'},
@@ -17,14 +17,11 @@ const Educations = () => {
 		setSelectedImage(image);
 	};
 	return (
-		<section
-			id="Educations"
-			className="relative w-full md:h-screen h-unset mt-8"
-		>
+		<section id="Education" className=" w-full pt-16">
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<div>
 					<h2 className="text-4xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-5xl">
-						Educations
+						Education
 					</h2>
 				</div>
 
@@ -52,4 +49,4 @@ const Educations = () => {
 	);
 };
 
-export default Educations;
+export default Education;

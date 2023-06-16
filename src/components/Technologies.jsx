@@ -10,13 +10,13 @@ const Technologies = () => {
 		{
 			id: 1,
 			src: html,
-			title: 'Html',
+			title: 'HTML',
 			style: 'shadow-[#E44D26]',
 		},
 		{
 			id: 2,
 			src: css,
-			title: 'Css',
+			title: 'CSS',
 			style: 'shadow-[#039BE5]',
 		},
 		{
@@ -45,9 +45,9 @@ const Technologies = () => {
 		},
 	];
 	return (
-		<section id="Technologies" className="relative w-full md:h-screen h-unset">
+		<section id="Technologies" className="relative w-full pt-16">
 			<div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
-				<div>
+				<div className='pb-4'>
 					<h2 className="text-4xl font-bold inline pb-1 border-b-4 border-primary-color/40 sm:text-5xl">
 						Technologies
 					</h2>

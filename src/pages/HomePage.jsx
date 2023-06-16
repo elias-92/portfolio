@@ -4,7 +4,7 @@ import Technologies from '../components/Technologies';
 import Contact from '../components/Contact';
 import About from '../components/About';
 import Projects from '../components/Projects';
-import Educations from '../components/Educations';
+import Education from '../components/Education';
 
 const HomePage = ({darkMode, toggleDarkMode}) => {
 	return (
@@ -14,7 +14,7 @@ const HomePage = ({darkMode, toggleDarkMode}) => {
 			<About />
 			<Projects />
 			<Technologies />
-			<Educations />
+			<Education />
 			<Contact />
 		</>
 	);
