@@ -20,8 +20,8 @@ const Home = () => {
 					</p>
 					<div>
 						<a
-							href="/CV_MARTINEZ_Elias.pdf"
-							download="CV_MARTINEZ_Elias.pdf"
+							href="/CV_Elias_Martinez.pdf"
+							download="CV_Elias_Martinez.pdf"
 							className="group font-semibold w-fit px-6 py-3 my-2 flex items-center rounded-md text-black bg-gradient-to-t from-green-400 to-primary-color cursor-pointer mx-auto md:mx-0 hover:scale-105 duration-100"
 						>
 							Download CV
