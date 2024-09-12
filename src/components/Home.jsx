@@ -16,10 +16,11 @@ const Home = () => {
             Front-end Developer
           </h2>
           <p className="py-4 max-x-md text-justify">
-            Certified by Coder House, recognized online education platform, where I graduated as a
-            Frontend Developer with React. I'm excited to share the knowledge and skills I've
-            acquired along the way. Thank you for visiting my portfolio and being part of my
-            journey!
+            As a dedicated Front-end Developer, I specialize in building dynamic, user-centric web
+            experiences with a focus on modern technologies and best practices. My journey in web
+            development has allowed me skills in creating intuitive interfaces that prioritize both
+            functionality and design.
+            <br /> Thank you for visiting my portfolio and exploring my work.
           </p>
           <div>
             <a

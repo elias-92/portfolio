@@ -1,22 +1,47 @@
-import cellMedics from '../assets/img/cellMedics.png'
-import emiliaRescata from '../assets/img/emiliaRescata.png'
-const Projects = () => {
-  const profProject = [
+import ecommerce from '../assets/img/ecommerce.png'
+import hotels from '../assets/img/hotels.png'
+import weather from '../assets/img/weather.png'
+import gifExpert from '../assets/img/gifExpert.png'
+
+const PersonalProjects = () => {
+  const projects = [
     {
       id: 1,
-      src: emiliaRescata,
-      name: 'Emilia Rescata Animales',
-      webSite: 'https://www.emiliarescataanimales.org/'
+      src: hotels,
+      name: 'Reservation Hotels',
+      code: 'https://github.com/elias-92/reservahotelera',
+      webSite: 'https://2023-reserva-hotelera.netlify.app'
     },
     {
       id: 2,
-      src: cellMedics,
-      name: 'Cell Medics',
-      webSite: 'https://cellmedics.netlify.app/'
+      src: ecommerce,
+      name: 'Ecommerce',
+      code: 'https://github.com/elias-92/2023-eCommerce',
+      webSite: 'https://2023-ecommerce.netlify.app'
+    },
+    {
+      id: 3,
+      src: weather,
+      name: 'Weather and expense annotation',
+      code: 'https://github.com/elias-92/Clima-AnotacionGastos',
+      webSite: 'https://elias-92.github.io/Clima-AnotacionGastos/'
+    },
+    {
+      id: 4,
+      src: gifExpert,
+      name: 'Gifs finder',
+      code: 'https://github.com/elias-92/gifExpertApp',
+      webSite: 'https://elias-92.github.io/gifExpertApp/'
     }
   ]
+
   const handleClickWebSite = (webSiteUrl) => {
     const newWebSite = window.open(webSiteUrl, '_blank')
+    newWebSite.opener = null
+    newWebSite.rel = 'noopener noreferrer'
+  }
+  const handleClickCode = (codeUrl) => {
+    const newWebSite = window.open(codeUrl, '_blank')
     newWebSite.opener = null
     newWebSite.rel = 'noopener noreferrer'
   }
@@ -29,12 +54,12 @@ const Projects = () => {
         <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
           <div className="mb-10">
             <h2 className="text-4xl font-bold inline border-b-4 border-primary-color/40 sm:text-5xl pb-1">
-              Professional projects
+              Personal projects
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-6">
-            {profProject.map(({ id, src, webSite }) => (
+            {projects.map(({ id, src, webSite, code }) => (
               <div
                 key={id}
                 className="shadow-md shadow-primary-color/60 rounded-lg max-w-md mx-auto hover:scale-105 duration-500"
@@ -51,6 +76,12 @@ const Projects = () => {
                   >
                     Website
                   </button>
+                  <button
+                    onClick={() => handleClickCode(code)}
+                    className="w-1/2 px-6 py-2 m-4 duration-200 hover:text-primary-color"
+                  >
+                    Code
+                  </button>
                 </div>
               </div>
             ))}
@@ -61,4 +92,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default PersonalProjects
